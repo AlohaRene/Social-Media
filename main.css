@@ -1,107 +1,126 @@
-#portfolio-projects {
-  padding: 100px 15px;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("sass/reset.css");
+@import url("sass/top-jumbo.css");
+@import url("sass/header.css");
+@import url("sass/design-by.css");
+@import url("sass/color-collection.css");
+@import url("sass/blue-print.css");
+@import url("sass/latest.css");
+@import url("sass/footer.css");
+/*
+#fea83b orange
+#6066f2 lightblue
+#b286f8 purple
+#4c44c1 blue
+#e6cdf9 light purple
+#
+*/
+/*begin container*/
 .container {
-  max-width: 950px;
+  max-width: 1400px;
   margin: 0 auto;
-}
+  padding: 0 20px; }
 
-#portfolio-projects .project-image {
-  width: 100%;
-  margin: 0 auto;
-  -webkit-box-shadow: 0px 5px 20px -5px rgba(140, 140, 140, 0.8);
-  -moz-box-shadow: 0px 5px 20px -5px rgba(140, 140, 140, 0.8);
-  box-shadow: 0px 5px 20px -5px rgba(140, 140, 140, 0.8);
-}
+.container-fluid {
+  margin: 0 5%;
+  padding: 0 20px; }
 
-#portfolio-projects .project-image .img {
-  width: 100%;
-  height: 555px;
-  background-position: center top !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  border-radius: 3px;
-}
+.box-shadow-down {
+  -webkit-box-shadow: 0px 17px 40px -10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 17px 40px -10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 17px 40px -10px rgba(0, 0, 0, 0.3); }
 
-#portfolio-projects h1 {
-  font-size: 4em;
+.box-shadow-center {
+  -webkit-box-shadow: 0px 0px 65px 13px rgba(158, 158, 158, 0.2);
+  -moz-box-shadow: 0px 0px 65px 13px rgba(158, 158, 158, 0.2);
+  box-shadow: 0px 0px 65px 13px rgba(158, 158, 158, 0.2); }
+
+input::placeholder {
+  color: #d5e2ea; }
+
+/*laptop*/
+/*tablet*/
+/*mobile*/
+
+/*# sourceMappingURL=main.css.map */
+
+
+
+
+
+
+
+
+header {
+  padding: 30px 20px;
+  font-size: 14px;
   font-weight: 600;
-  margin: 1.5em 0 1em 0;
-  text-align: center;
-  text-transform: uppercase;
-}
+  margin-bottom: 50px; }
 
-#portfolio-projects .info .buttons {
-  padding: 20px 0;
-  text-align: center;
-}
+header:after {
+  /*whenever we use Float always put this code in parent element/div*/
+  content: "";
+  display: table;
+  clear: both; }
 
-#portfolio-projects .info .buttons a {
+header a {
+  color: #4c44c1;
+  text-decoration: none; }
+
+header .logo {
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 3px;
+  float: left;
+  margin-right: 28px; }
+
+header .logo img {
+  width: 50px; }
+
+header .menu {
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 20px; }
+
+header .menu a {
+  text-transform: uppercase; }
+
+header .header-buttons {
+  display: inline-block;
+  float: right; }
+
+header .header-buttons .blue-btn {
+  background: #6066f2;
+  padding: 14px 46px;
   color: white;
-  font-weight: 500;
-  background: #333333;
-  transition: all 0.3s ease-in-out;
+  border-radius: 35px;
   text-decoration: none;
-}
-
-#portfolio-projects p {
-  color: #929294;
-  font-size: 1.2em;
-  line-height: 1.7;
-  margin: 1.8em 0;
-}
-
-#portfolio-projects .technologies {
-  padding: 100px;
-}
-
-#portfolio-projects h3 {
-  font-size: 2em;
-  font-weight: 700;
   text-transform: uppercase;
-  margin: 2em 0;
-  text-align: center;
-}
+  position: relative;
+  top: 20px; }
 
-#portfolio-projects .technologies .icons {
-  grid-template-columns: 1fr 1fr 1fr !important;
-}
+header .header-buttons .fas {
+  margin-left: 15px; }
 
-#portfolio-projects .technologies .icons .icon img {
-  width: 100%;
-  max-width: 60px;
-}
+header .header-buttons .orange-btn {
+  background: #fea83b;
+  padding: 14px 46px;
+  color: white;
+  border-radius: 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  top: 20px; }
 
-#portfolio-projects .technologies .icons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  align-items: center;
-  justify-items: center;
-}
+/*laptop*/
+/*tablet*/
+/*mobile*/
+/*mobile mini*/
+@media only screen and (max-width: 320px) {
+  header .header-buttons {
+    display: inline-grid;
+    float: right; }
 
-#portfolio-projects .info .buttons a:hover {
-  background: #ff5253;
-}
+  header .menu {
+    display: inline-grid; } }
 
-#portfolio-projects .info .buttons a .fas {
-  color: #ff5253;
-  margin-right: 10px;
-}
-
-@media screen and (min-width: 400px) {
-  #portfolio-projects h1 {
-    font-size: 2rem;
-  }
-
-  #portfolio-projects p {
-    font-size: 1rem;
-  }
-}
-/*# sourceMappingURL=email.css.map */
-
-/*# sourceMappingURL=socialmedia.css.map */
+/*# sourceMappingURL=header.css.map */
