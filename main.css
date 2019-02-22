@@ -1,126 +1,493 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
-@import url("sass/reset.css");
-@import url("sass/top-jumbo.css");
-@import url("sass/header.css");
-@import url("sass/design-by.css");
-@import url("sass/color-collection.css");
-@import url("sass/blue-print.css");
-@import url("sass/latest.css");
-@import url("sass/footer.css");
-/*
-#fea83b orange
-#6066f2 lightblue
-#b286f8 purple
-#4c44c1 blue
-#e6cdf9 light purple
-#
-*/
-/*begin container*/
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px; }
+*{
+	box-sizing: border-box;
+}
 
-.container-fluid {
-  margin: 0 5%;
-  padding: 0 20px; }
+html{
+	font-family: sans-serif;
+}
 
-.box-shadow-down {
-  -webkit-box-shadow: 0px 17px 40px -10px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 17px 40px -10px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 17px 40px -10px rgba(0, 0, 0, 0.3); }
+a{
+    text-decoration: none;
+    color: #2196F3;
+    transition: all .2s ease-in-out;
+}
 
-.box-shadow-center {
-  -webkit-box-shadow: 0px 0px 65px 13px rgba(158, 158, 158, 0.2);
-  -moz-box-shadow: 0px 0px 65px 13px rgba(158, 158, 158, 0.2);
-  box-shadow: 0px 0px 65px 13px rgba(158, 158, 158, 0.2); }
+a:hover{
+    color: red;
+}
 
-input::placeholder {
-  color: #d5e2ea; }
+header{
+	background: #3B5998;
+	padding: 15px;
+}
 
-/*laptop*/
-/*tablet*/
-/*mobile*/
+header .logo-area{
+	display: inline-block;
+	width: 20%;
+	margin-left: -4px;
+	
+}
 
-/*# sourceMappingURL=main.css.map */
+header .logo-area a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	
+}
+
+header .menu{
+	display: inline-block;
+	width: 20%;
+	margin-left: -4px;
+	border-right: 1px solid rgba(255,255,255,.3);
+	text-align: right;
+	padding-right: 20px;
+}
+
+header .menu ul li{
+	display: inline-block;
+}
+
+header .menu ul li a {
+    margin-right: 20px;
+}
+header .icon-links{
+	display: inline-block;
+	width: 20%;
+	margin-left: -4px;
+	padding-left: 20px;
+}
+
+header .icon-links ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+header .search-area{
+	display: inline-block;
+	width: 40%;
+	margin-left: -4px;
+	text-align: right;
+}
+
+header .search-area ul li{
+	display: inline-block;
+}
+
+header .icon-links .quick-options {
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: 1px solid rgba(255,255,255,.3);
+	margin-left: -4px;
+}
+
+header .icon-links .privacy{
+	display: inline-block;
+	padding-left: 20px;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+header .fa{
+	color: white;
+	font-size: 16px;
+}
+/*///////////////////\/\/\/\/////////////END HEADER//\/\/\/\/\///////////////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////\/\/\/\/\/\/\//////////BEGIN TOP PROFILE AREA \/- \/\/\/\/\/\////////////////////////////////////////////////////////////////////////////////////////////////*/
+#top-area{
+	padding: 200px 15px 90px 15px;
+	background: url(https://images5.alphacoders.com/473/thumb-1920-473154.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+
+#top-area .profile-info .user-img{
+	padding: 10px;
+	display: inline-block;
+}
+
+#top-area .profile-info .user-img img{
+	border-radius: 50%;
+}
+
+#top-area .profile-info .user-details{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+}
+
+#top-area .profile-info .user-details h3{
+	color: white;
+	font-size: 24px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	margin-top: 40px;
+
+	}
+
+	#top-area .profile-info .user-details a{
+	background: rgb(255,255,255, .3);
+	display: inline-block;
+	margin-left: -4px;
+	margin-right: 5%;
+	width: 45%;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 10px;
+	padding: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	transition: background .4s ease-in-out;
+}
+
+#top-area .profile-info .user-details a:hover{
+	 background: #2196F3; 
+}
+
+
+/*////////////////////////\/\/\/\/\/\ END  TOP PROFILE AREA \/-/\/\/\/\/\//////////////////////////////////////////////////////////////////////////////////////////////*/
+#content-area{
+	background: #FAFAFA;
+	overflow: auto;
+	padding: 50px 0;
+}
+
+#content-area .side-column{
+    float: left;
+    width: 35%;
+    margin: 0 2.5%;
+    max-width: 380px;
+    
+}
+#content-area .widget-box{
+    padding: 15px;
+    background: #fff;
+    margin: 0 0 15px 0;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 2px 5px -1px rgba(138,138,138,1);
+-moz-box-shadow: 0px 2px 5px -1px rgba(138,138,138,1);
+box-shadow: 0px 2px 5px -1px rgba(138,138,138,1);
+overflow: auto;
+}
+
+#content-area .widget-box .head .widget-icon{
+    background: #BFBFBF;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  #content-area .widget-box .head .widget-icon .fa{
+   	max-width: 50%;
+   	font-size: 22px;
+  
+}
+
+
+#content-area .main-area{
+	float: left;
+	width: 55%;
+	margin: 0 2.5%;
+	
+}
+
+#content-area .widget-box .head .widget-title{
+    display: inline-block;
+    padding: 0 0 0 10px;
+}
+
+#content-area .widget-box .head .widget-icon-container{
+    display: inline-block;
+}
+
+#content-area .widget-box .body{
+    padding: 20px 0;
+}
+
+
+#content-area .main-area .submenu ul{
+	padding: 0;
+	margin: 0;	
+
+}
+
+#content-area .main-area .submenu ul li {
+    display: inline-block;
+    padding: 10px;
+    width: 20%;
+    float: left;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    transition: all .4s ease-in-out;
+    cursor: pointer; 
+
+}
+
+#content-area .main-area .submenu ul li:hover {
+    border-bottom: 3px solid #2196F3;
+    color: #2196F3;
+}
+
+#content-area .main-area .submenu ul li .fa{
+    font-size: 20px;
+}
+
+#content-area .main-area .widget-box.submenu {
+    padding: 0;
+    margin: 0;
+    margin: 0 0 20px 0;
+}
+
+#content-area .main-area .submenu ul li span{
+    display: block;
+    margin: 15px 0 0 0;    
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#content-area .main-area .submenu ul li:nth-child(5) {
+    padding: 28px 0 21px;
+}
+
+
+
+/*.,.,.,.,.,.,.,.,.,.,,,*/
+
+ #content-area .main-area .widget-box.post {
+    overflow: auto;
+}
+
+#content-area .main-area .widget-box.post .head .user-img{
+    display: inline-block;
+    float: left;
+    background: url(https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  margin: 0 15px 0 0;
+  border-radius: 50%;
+}
+    
+
+#content-area .main-area .widget-box.post .head .post-info{
+	display: inline-block;
+	float: left;
+	width: 92%;
+}
+
+
+
+#content-area .main-area .widget-box.post .head .post-info .user-info{
+	display: block;
+	font-size: 14px;
+	margin: 4px 0 6px 0;
+}
+
+#content-area .main-area .widget-box.post .head .post-info .post-date{
+	display: block;
+	font-size: 12px;
+	color: #ABABAB; 
+}
+
+#content-area .main-area .widget-box .post .body .post-img img{
+	width: 100%;
+}
+
+#content-area .main-area .widget-box .post .body .body{
+	padding: 0;
+}
+#content-area .main-area .widget-box.post .body .post-comments .user-info{
+	background: #E0E0E0;
+	margin-left: -15px;
+	margin-right: -15px;
+	/**/;
+}
+
+#content-area .main-area .widget-box .post .head .user-img-container{
+	width: 8%;
+	display: inline-block;
+	overflow: auto;
+	float: left;
+}
+
+#content-area .main-area .widget-box .post .head {
+	margin: 0 0 15px 0;
+}
+
+#content-area .main-area .widget-box.post .head::after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+/*--------------¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯¯\_(ツ)_/¯----------------------------------------------------------------*/
 
 
 
 
 
+#content-area .main-area .widget-box.post .body .post-form img{
+	width: 100%;
+	border-radius: 50%; 
+}
+
+
+#content-area .main-area .widget-box.post .body .post-comments{
+	background: #E0E0E0;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 15px;
+
+}
+
+#content-area .main-area .widget-box.post .body .post-comments .user-img{
+	width: 8%;
+	display: inline-block;
+	overflow: auto;
+	float: left;
+}
+
+#content-area .main-area .widget-box.post .body .post-comments::after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+#content-area .main-area .widget-box.post .body .post-comments .user-img img{
+    border-radius: 50%;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+#content-area .main-area .widget-box.post .body .post-comments .user-comment{
+    display: inline-block;
+    float: left;
+    width: 92%; 
+    font-size: 14px;
+    }
+
+ #content-area .main-area .widget-box.post .body .post-comments .user-comment .user-info{
+    margin: 5px 0 10px 0;
+}
+
+
+/*-------------------------------&&&&&&&&&&&&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*---------------------------------------------------------*/
+
+
+#content-area .main-area .widget-box.post .body .post-form img{
+	width: 100%;
+	border-radius: 50%; 
+}
+
+#content-area .main-area .widget-box.post .body .top-icons span{
+float: right;
+display: inline-block;
+}
+
+#content-area .main-area .widget-box.post .body .top-icons {
+width: 100%;
+padding: 15px 0;
+color: #A8A8A8;
+}
+
+#content-area .main-area .widget-box.post .body .top-icons .fa{
+	color: #E0E0E0;
+}
+
+#content-area .main-area .widget-box.post .body .top-icons .fas fa-comment{
+
+}
+
+
+#content-area .main-area .widget-box.post .body .post-form{
+	padding: 15px 0 0 0;
+}
+
+#content-area .main-area .widget-box.post .body .post-form .user-img{
+	width: 8%;
+	display: inline-block;
+	overflow: auto;
+	float: left;
+}
+
+#content-area .main-area .widget-box.post .body .post-form::after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+#content-area .main-area .widget-box.post .body .post-form .user-img img{
+    border-radius: 50%;
+    float: left;
+    width: 40px;
+    height: 40px;
+}
 
 
 
-header {
-  padding: 30px 20px;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 50px; }
+  #content-area .main-area .widget-box.post .body .post-form .form-info{
+    display: inline-block;
+    float: left;
+    width: 92%; 
+  	font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ABABAB;
+    }
 
-header:after {
-  /*whenever we use Float always put this code in parent element/div*/
-  content: "";
-  display: table;
-  clear: both; }
+ #content-area .main-area .widget-box.post .body .post-form .user-comment .user-info{
+    margin: 5px 0 10px 0;
+}
 
-header a {
-  color: #4c44c1;
-  text-decoration: none; }
 
-header .logo {
-  display: inline-block;
-  float: left;
-  margin-right: 28px; }
+#content-area .main-area .widget-box.post .body .post-form .form-info .icons{
+	display: inline-block;
+	float: right;
+}
 
-header .logo img {
-  width: 50px; }
+#content-area .main-area .widget-box.post .body .post-form .form-info .icons .fas{
+	font-size: 20px;
+	margin: 0 15px 0 0;
+}
 
-header .menu {
-  display: inline-block;
-  float: left;
-  position: relative;
-  top: 20px; }
+#content-area .main-area .widget-box.post .body .post-form .form-info input{
+	width: 80%;
+	border: 0 solid #fff;
+	
+	font-size: 18px;
+}
 
-header .menu a {
-  text-transform: uppercase; }
+#content-area .main-area .widget-box.post .body .post-form .form-info input:focus{
+	width: 80%;
+	border: 0 solid #fff;
+	padding: 10px;
+	font-size: 18px;
+	outline: none;
+}
 
-header .header-buttons {
-  display: inline-block;
-  float: right; }
+#content-area .main-area .widget-box.post .body .post-comments .user-comment .user-info .time{
+    font-size: 10px;
+    color: #A8A8A8;
+    float: right;
+    }
 
-header .header-buttons .blue-btn {
-  background: #6066f2;
-  padding: 14px 46px;
-  color: white;
-  border-radius: 35px;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: relative;
-  top: 20px; }
-
-header .header-buttons .fas {
-  margin-left: 15px; }
-
-header .header-buttons .orange-btn {
-  background: #fea83b;
-  padding: 14px 46px;
-  color: white;
-  border-radius: 35px;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: relative;
-  top: 20px; }
-
-/*laptop*/
-/*tablet*/
-/*mobile*/
-/*mobile mini*/
-@media only screen and (max-width: 320px) {
-  header .header-buttons {
-    display: inline-grid;
-    float: right; }
-
-  header .menu {
-    display: inline-grid; } }
-
-/*# sourceMappingURL=header.css.map */
+    
