@@ -276,7 +276,7 @@ overflow: auto;
 #content-area .main-area .widget-box.post .head .user-img{
     display: inline-block;
     float: left;
-    background: url(https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg) no-repeat center center; 
+    background: url(https://randomuser.me/api/portraits/women/9.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
